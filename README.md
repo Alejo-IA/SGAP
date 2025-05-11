@@ -1,91 +1,102 @@
-SGAP - Academic Management System
+### SGAP - Academic Management System
+
 Academic management system for teachers and students.
 
-Prerequisites
-Python 3.9+
+---
 
-Node.js 18+
+## Prerequisites
 
-npm 8+
+* Python 3.9+
+* Node.js 18+
+* npm 8+
 
-Installation
-Backend (Django)
-Clone the repository:
+---
 
-bash
-Copiar
-Editar
+## Installation
+
+### Backend (Django)
+
+1. Clone the repository:
+
+```bash
 git clone https://github.com/Alejo-IA/SGAP.git
 cd SGAP
-Create and activate a virtual environment:
+```
 
-bash
-Copiar
-Editar
+2. Create and activate a virtual environment:
+
+```bash
 # Windows
 python -m venv venv
-venv\Scripts\activate  
+venv\Scripts\activate
 
 # Linux/Mac
 python3 -m venv venv
 source venv/bin/activate
-Install dependencies:
+```
 
-bash
-Copiar
-Editar
+3. Install dependencies:
+
+```bash
 cd backend
 pip install -r requirements.txt
-Configure environment variables:
+```
 
-bash
-Copiar
-Editar
+4. Configure environment variables:
+
+```bash
 cp .env.example .env
 # Edit .env with your settings
-Apply migrations:
+```
 
-bash
-Copiar
-Editar
+5. Apply migrations:
+
+```bash
 python manage.py migrate
-Create superuser:
+```
 
-bash
-Copiar
-Editar
+6. Create superuser:
+
+```bash
 python manage.py createsuperuser
-Start the server:
+```
 
-bash
-Copiar
-Editar
+7. Start the server:
+
+```bash
 python manage.py runserver
-Frontend (React)
-Install dependencies:
+```
 
-bash
-Copiar
-Editar
+---
+
+### Frontend (React)
+
+1. Install dependencies:
+
+```bash
 cd frontend
 npm install
-Start the development server:
+```
 
-bash
-Copiar
-Editar
+2. Start the development server:
+
+```bash
 npm run dev
-Access
-Frontend: http://localhost:3000
+```
 
-Backend API: http://localhost:8000
+---
 
-Django Admin: http://localhost:8000/admin
+## Access
 
-Project Structure
-csharp
-Copiar
-Editar
+* Frontend: [http://localhost:3000](http://localhost:3000)
+* Backend API: [http://localhost:8000](http://localhost:8000)
+* Django Admin: [http://localhost:8000/admin](http://localhost:8000/admin)
+
+---
+
+## Project Structure
+
+```
 SGAP/
 ├── backend/           # Django Project
 │   ├── academic/      # Main App
@@ -96,18 +107,21 @@ SGAP/
     ├── src/
     ├── public/
     └── package.json
-Development
-The backend uses Django 4.2 with Django REST Framework
+```
 
-The frontend uses React with TypeScript and Tailwind CSS
+---
 
-Authentication is managed with Django sessions
+## Development
 
-CORS is configured for local development
+* The backend uses Django 4.2 with Django REST Framework
+* The frontend uses React with TypeScript and Tailwind CSS
+* Authentication is managed with Django sessions
+* CORS is configured for local development
 
-Contributing
-Create a branch for the new feature
+---
 
-Commit your changes
+## Contributing
 
-Create a Pull Request
+1. Create a branch for the new feature
+2. Commit your changes
+3. Create a Pull Request
