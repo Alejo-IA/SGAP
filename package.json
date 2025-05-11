@@ -1,0 +1,22 @@
+{
+  "name": "sgap",
+  "version": "1.0.0",
+  "description": "Sistema de Gestión Académica y de Proyectos",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "start": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "test": "cd frontend && npm test",
+    "install:frontend": "cd frontend && npm install",
+    "dev": "concurrently \"cd backend && python manage.py runserver\" \"cd frontend && npm start\""
+  },
+  "keywords": [],
+  "author": "Alejo",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

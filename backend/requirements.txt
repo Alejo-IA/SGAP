@@ -1,0 +1,9 @@
+Django==4.2.9
+djangorestframework==3.14.0
+django-cors-headers==4.3.1
+python-dotenv==1.0.1
+Pillow==10.2.0  # Para manejo de imágenes
+django-filter==23.5  # Para filtrado avanzado
+drf-yasg==1.21.7  # Para documentación de la API
+whitenoise==6.6.0  # Para servir archivos estáticos
+gunicorn==21.2.0  # Para despliegue 
