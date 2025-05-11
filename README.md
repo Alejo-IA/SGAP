@@ -1,104 +1,113 @@
-# SGAP - Sistema de Gestión Académica
+SGAP - Academic Management System
+Academic management system for teachers and students.
 
-Sistema de gestión académica para profesores y estudiantes.
+Prerequisites
+Python 3.9+
 
-## Requisitos Previos
+Node.js 18+
 
-- Python 3.9+
-- Node.js 18+
-- npm 8+
+npm 8+
 
-## Instalación
+Installation
+Backend (Django)
+Clone the repository:
 
-### Backend (Django)
-
-1. Clonar el repositorio:
-```bash
-git clone <url-del-repositorio>
+bash
+Copiar
+Editar
+git clone https://github.com/Alejo-IA/SGAP.git
 cd SGAP
-```
+Create and activate a virtual environment:
 
-2. Crear y activar entorno virtual:
-```bash
+bash
+Copiar
+Editar
 # Windows
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate  
 
 # Linux/Mac
 python3 -m venv venv
 source venv/bin/activate
-```
+Install dependencies:
 
-3. Instalar dependencias:
-```bash
+bash
+Copiar
+Editar
 cd backend
 pip install -r requirements.txt
-```
+Configure environment variables:
 
-4. Configurar variables de entorno:
-```bash
+bash
+Copiar
+Editar
 cp .env.example .env
-# Editar .env con tus configuraciones
-```
+# Edit .env with your settings
+Apply migrations:
 
-5. Aplicar migraciones:
-```bash
+bash
+Copiar
+Editar
 python manage.py migrate
-```
+Create superuser:
 
-6. Crear superusuario:
-```bash
+bash
+Copiar
+Editar
 python manage.py createsuperuser
-```
+Start the server:
 
-7. Iniciar servidor:
-```bash
+bash
+Copiar
+Editar
 python manage.py runserver
-```
+Frontend (React)
+Install dependencies:
 
-### Frontend (React)
-
-1. Instalar dependencias:
-```bash
+bash
+Copiar
+Editar
 cd frontend
 npm install
-```
+Start the development server:
 
-2. Iniciar servidor de desarrollo:
-```bash
+bash
+Copiar
+Editar
 npm run dev
-```
+Access
+Frontend: http://localhost:3000
 
-## Acceso
+Backend API: http://localhost:8000
 
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:8000
-- Admin Django: http://localhost:8000/admin
+Django Admin: http://localhost:8000/admin
 
-## Estructura del Proyecto
-
-```
+Project Structure
+csharp
+Copiar
+Editar
 SGAP/
-├── backend/             # Proyecto Django
-│   ├── academic/       # App principal
-│   ├── backend/       # Configuración del proyecto
+├── backend/           # Django Project
+│   ├── academic/      # Main App
+│   ├── backend/       # Project Configuration
 │   └── requirements.txt
 │
-└── frontend/           # Proyecto React
+└── frontend/          # React Project
     ├── src/
     ├── public/
     └── package.json
-```
+Development
+The backend uses Django 4.2 with Django REST Framework
 
-## Desarrollo
+The frontend uses React with TypeScript and Tailwind CSS
 
-- El backend usa Django 4.2 con Django REST Framework
-- El frontend usa React con TypeScript y Tailwind CSS
-- La autenticación se maneja con sesiones de Django
-- CORS está configurado para desarrollo local
+Authentication is managed with Django sessions
 
-## Contribuir
+CORS is configured for local development
 
-1. Crear rama para nueva característica
-2. Hacer commit de cambios
-3. Crear Pull Request 
+Contributing
+Create a branch for the new feature
+
+Commit your changes
+
+Create a Pull Request
